@@ -10,12 +10,12 @@
 		38A134861C28F22900E1B4A9 /* SBObjectiveCWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A1347B1C28F22900E1B4A9 /* SBObjectiveCWrapper.framework */; };
 		38A1348B1C28F22900E1B4A9 /* SBObjectiveCWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A1348A1C28F22900E1B4A9 /* SBObjectiveCWrapperTests.swift */; };
 		38A1349B1C28F71700E1B4A9 /* SBObjectiveCWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A1349A1C28F71700E1B4A9 /* SBObjectiveCWrapper.swift */; };
-		38A1349E1C29071200E1B4A9 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A1349D1C29071200E1B4A9 /* SwiftyBeaver.framework */; };
 		38A134AD1C29080500E1B4A9 /* SBObjectiveCWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A1349A1C28F71700E1B4A9 /* SBObjectiveCWrapper.swift */; };
 		38A134BC1C2908CE00E1B4A9 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A134BB1C2908CE00E1B4A9 /* SwiftyBeaver.framework */; };
 		38A134BE1C2908D500E1B4A9 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A134BD1C2908D500E1B4A9 /* SwiftyBeaver.framework */; };
 		38A134C71C29093E00E1B4A9 /* SBObjectiveCWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 38A134C61C29093E00E1B4A9 /* SBObjectiveCWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		38A134CD1C29097E00E1B4A9 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A134CC1C29097E00E1B4A9 /* SwiftyBeaver.framework */; };
+		38A134CF1C290A0800E1B4A9 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A134CE1C290A0800E1B4A9 /* SwiftyBeaver.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		38A134971C28F2BB00E1B4A9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../SwiftyBeaver/README.md; sourceTree = "<group>"; };
 		38A134981C28F2ED00E1B4A9 /* SBObjectiveCWrapper.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = SBObjectiveCWrapper.podspec; path = ../SBObjectiveCWrapper.podspec; sourceTree = "<group>"; };
 		38A1349A1C28F71700E1B4A9 /* SBObjectiveCWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBObjectiveCWrapper.swift; sourceTree = "<group>"; };
-		38A1349D1C29071200E1B4A9 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = "../../../../../../../../Desktop/SBObjectiveCWrapper/lib/SwiftyBeaver/build/Debug-iphoneos/SwiftyBeaver.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A134A41C29078D00E1B4A9 /* SBObjectiveCWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBObjectiveCWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A134AC1C2907B900E1B4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38A134B31C29083A00E1B4A9 /* SBObjectiveCWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBObjectiveCWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +47,8 @@
 		38A134C61C29093E00E1B4A9 /* SBObjectiveCWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBObjectiveCWrapper.h; sourceTree = "<group>"; };
 		38A134C81C29093E00E1B4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38A134CC1C29097E00E1B4A9 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = ../../../../../../../../Desktop/SBObjectiveCWrapper/lib/SwiftyBeaver/build/Debug/SwiftyBeaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38A134CE1C290A0800E1B4A9 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = "../../../../../../../../Desktop/SBObjectiveCWrapper/lib/SwiftyBeaver/build/Debug-iphoneos/SwiftyBeaver.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38A134D01C290A8D00E1B4A9 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cartfile; path = ../Cartfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38A1349E1C29071200E1B4A9 /* SwiftyBeaver.framework in Frameworks */,
+				38A134CF1C290A0800E1B4A9 /* SwiftyBeaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +98,7 @@
 		38A134711C28F22900E1B4A9 = {
 			isa = PBXGroup;
 			children = (
+				38A134D01C290A8D00E1B4A9 /* Cartfile */,
 				38A134951C28F26F00E1B4A9 /* .gitIgnore */,
 				38A134961C28F29200E1B4A9 /* LICENSE */,
 				38A134971C28F2BB00E1B4A9 /* README.md */,
@@ -106,10 +108,10 @@
 				38A134891C28F22900E1B4A9 /* SBObjectiveCWrapperTests */,
 				38A134C51C29093E00E1B4A9 /* SBObjectiveCWrapper */,
 				38A1347C1C28F22900E1B4A9 /* Products */,
-				38A1349D1C29071200E1B4A9 /* SwiftyBeaver.framework */,
 				38A134CC1C29097E00E1B4A9 /* SwiftyBeaver.framework */,
 				38A134BD1C2908D500E1B4A9 /* SwiftyBeaver.framework */,
 				38A134BB1C2908CE00E1B4A9 /* SwiftyBeaver.framework */,
+				38A134CE1C290A0800E1B4A9 /* SwiftyBeaver.framework */,
 			);
 			sourceTree = "<group>";
 		};
