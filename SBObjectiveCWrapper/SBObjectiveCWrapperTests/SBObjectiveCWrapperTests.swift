@@ -8,12 +8,18 @@
 
 import XCTest
 @testable import SBObjectiveCWrapper
+import SwiftyBeaver
 
 class SBObjectiveCWrapperTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        let testLoggerClass = TestLogger.self
+        testLoggerClass.lastLog = nil
+        //testLoggerClass.setLastLog(nil)
+        SBObjectiveCWrapper.self.logClass = testLoggerClass
+    
     }
     
     override func tearDown() {
@@ -21,16 +27,68 @@ class SBObjectiveCWrapperTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testCanLogVerbose() {
+        
+        let message = "Message"
+        let line = __LINE__
+        
+        SBObjectiveCWrapper.logVerbose(message, filePath: __FILE__, function: __FUNCTION__, line: line)
+        
+        let expectedLog = Log(level: .Verbose, message: message, path: __FILE__, function: __FUNCTION__, line: line)
+        
+        XCTAssert(expectedLog == TestLogger.lastLog!, "Logger did not log.")
+        
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+    func testCanLogDebug() {
+        
+        let message = "Message"
+        let line = __LINE__
+
+        SBObjectiveCWrapper.logDebug(message, filePath: __FILE__, function: __FUNCTION__, line: line)
+        
+        let expectedLog = Log(level: .Debug, message: message, path: __FILE__, function: __FUNCTION__, line: line)
+
+        XCTAssert(expectedLog == TestLogger.lastLog!, "Logger did not log.")
+        
     }
     
+    func testCanLogInfo() {
+        
+        let message = "Message"
+        let line = __LINE__
+        
+        SBObjectiveCWrapper.logInfo(message, filePath: __FILE__, function: __FUNCTION__, line: line)
+        
+        let expectedLog = Log(level: .Info, message: message, path: __FILE__, function: __FUNCTION__, line: line)
+        
+        XCTAssert(expectedLog == TestLogger.lastLog!, "Logger did not log.")
+        
+    }
+    
+    func testCanLogWarning() {
+        
+        let message = "Message"
+        let line = __LINE__
+        
+        SBObjectiveCWrapper.logWarning(message, filePath: __FILE__, function: __FUNCTION__, line: line)
+        
+        let expectedLog = Log(level: .Warning, message: message, path: __FILE__, function: __FUNCTION__, line: line)
+        
+        XCTAssert(expectedLog == TestLogger.lastLog!, "Logger did not log.")
+        
+    }
+    
+    func testCanLogError() {
+        
+        let message = "Message"
+        let line = __LINE__
+        
+        SBObjectiveCWrapper.logError(message, filePath: __FILE__, function: __FUNCTION__, line: line)
+        
+        let expectedLog = Log(level: .Error, message: message, path: __FILE__, function: __FUNCTION__, line: line)
+        
+        XCTAssert(expectedLog == TestLogger.lastLog!, "Logger did not log.")
+        
+    }
 }

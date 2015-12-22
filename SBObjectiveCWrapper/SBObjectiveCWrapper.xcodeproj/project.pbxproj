@@ -13,9 +13,16 @@
 		38A134AD1C29080500E1B4A9 /* SBObjectiveCWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A1349A1C28F71700E1B4A9 /* SBObjectiveCWrapper.swift */; };
 		38A134BC1C2908CE00E1B4A9 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A134BB1C2908CE00E1B4A9 /* SwiftyBeaver.framework */; };
 		38A134BE1C2908D500E1B4A9 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A134BD1C2908D500E1B4A9 /* SwiftyBeaver.framework */; };
-		38A134C71C29093E00E1B4A9 /* SBObjectiveCWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 38A134C61C29093E00E1B4A9 /* SBObjectiveCWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		38A134CD1C29097E00E1B4A9 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A134CC1C29097E00E1B4A9 /* SwiftyBeaver.framework */; };
 		38A134CF1C290A0800E1B4A9 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A134CE1C290A0800E1B4A9 /* SwiftyBeaver.framework */; };
+		38A134D21C290D7200E1B4A9 /* SBObjectiveCWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 38A134D11C290D7200E1B4A9 /* SBObjectiveCWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38A134D31C290D7200E1B4A9 /* SBObjectiveCWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 38A134D11C290D7200E1B4A9 /* SBObjectiveCWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38A134D41C290D7200E1B4A9 /* SBObjectiveCWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 38A134D11C290D7200E1B4A9 /* SBObjectiveCWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38A134D51C290D7200E1B4A9 /* SBObjectiveCWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 38A134D11C290D7200E1B4A9 /* SBObjectiveCWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38A134D61C290FF900E1B4A9 /* SBObjectiveCWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A1349A1C28F71700E1B4A9 /* SBObjectiveCWrapper.swift */; };
+		38A134D71C290FFA00E1B4A9 /* SBObjectiveCWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A1349A1C28F71700E1B4A9 /* SBObjectiveCWrapper.swift */; };
+		38A134D91C291E4A00E1B4A9 /* TestLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A134D81C291E4A00E1B4A9 /* TestLogger.swift */; };
+		38A134DC1C291F2A00E1B4A9 /* SBObjectiveCMacroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A134DB1C291F2A00E1B4A9 /* SBObjectiveCMacroTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,23 +39,25 @@
 		38A1347B1C28F22900E1B4A9 /* SBObjectiveCWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBObjectiveCWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A134851C28F22900E1B4A9 /* SBObjectiveCWrapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBObjectiveCWrapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A1348A1C28F22900E1B4A9 /* SBObjectiveCWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBObjectiveCWrapperTests.swift; sourceTree = "<group>"; };
-		38A1348C1C28F22900E1B4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38A1348C1C28F22900E1B4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		38A134951C28F26F00E1B4A9 /* .gitIgnore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitIgnore; sourceTree = "<group>"; };
 		38A134961C28F29200E1B4A9 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		38A134971C28F2BB00E1B4A9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../SwiftyBeaver/README.md; sourceTree = "<group>"; };
 		38A134981C28F2ED00E1B4A9 /* SBObjectiveCWrapper.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = SBObjectiveCWrapper.podspec; path = ../SBObjectiveCWrapper.podspec; sourceTree = "<group>"; };
 		38A1349A1C28F71700E1B4A9 /* SBObjectiveCWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBObjectiveCWrapper.swift; sourceTree = "<group>"; };
 		38A134A41C29078D00E1B4A9 /* SBObjectiveCWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBObjectiveCWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		38A134AC1C2907B900E1B4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38A134B31C29083A00E1B4A9 /* SBObjectiveCWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBObjectiveCWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A134BB1C2908CE00E1B4A9 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = "../../../../../../../../Desktop/SBObjectiveCWrapper/lib/SwiftyBeaver/build/Debug-watchos/SwiftyBeaver.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A134BD1C2908D500E1B4A9 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = "../../../../../../../../Desktop/SBObjectiveCWrapper/lib/SwiftyBeaver/build/Debug-appletvos/SwiftyBeaver.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A134C41C29093D00E1B4A9 /* SBObjectiveCWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBObjectiveCWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		38A134C61C29093E00E1B4A9 /* SBObjectiveCWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBObjectiveCWrapper.h; sourceTree = "<group>"; };
 		38A134C81C29093E00E1B4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38A134CC1C29097E00E1B4A9 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = ../../../../../../../../Desktop/SBObjectiveCWrapper/lib/SwiftyBeaver/build/Debug/SwiftyBeaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A134CE1C290A0800E1B4A9 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = "../../../../../../../../Desktop/SBObjectiveCWrapper/lib/SwiftyBeaver/build/Debug-iphoneos/SwiftyBeaver.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A134D01C290A8D00E1B4A9 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cartfile; path = ../Cartfile; sourceTree = "<group>"; };
+		38A134D11C290D7200E1B4A9 /* SBObjectiveCWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBObjectiveCWrapper.h; sourceTree = "<group>"; };
+		38A134D81C291E4A00E1B4A9 /* TestLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLogger.swift; sourceTree = "<group>"; };
+		38A134DA1C291F2A00E1B4A9 /* SBObjectiveCWrapperTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SBObjectiveCWrapperTests-Bridging-Header.h"; path = "Supporting Files/SBObjectiveCWrapperTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		38A134DB1C291F2A00E1B4A9 /* SBObjectiveCMacroTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBObjectiveCMacroTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +113,6 @@
 				38A134971C28F2BB00E1B4A9 /* README.md */,
 				38A134981C28F2ED00E1B4A9 /* SBObjectiveCWrapper.podspec */,
 				38A134991C28F30F00E1B4A9 /* sources */,
-				38A1347D1C28F22900E1B4A9 /* SBObjectiveCWrapper */,
 				38A134891C28F22900E1B4A9 /* SBObjectiveCWrapperTests */,
 				38A134C51C29093E00E1B4A9 /* SBObjectiveCWrapper */,
 				38A1347C1C28F22900E1B4A9 /* Products */,
@@ -127,19 +135,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		38A1347D1C28F22900E1B4A9 /* SBObjectiveCWrapper */ = {
-			isa = PBXGroup;
-			children = (
-				38A134AC1C2907B900E1B4A9 /* Info.plist */,
-			);
-			path = SBObjectiveCWrapper;
-			sourceTree = "<group>";
-		};
 		38A134891C28F22900E1B4A9 /* SBObjectiveCWrapperTests */ = {
 			isa = PBXGroup;
 			children = (
 				38A1348A1C28F22900E1B4A9 /* SBObjectiveCWrapperTests.swift */,
-				38A1348C1C28F22900E1B4A9 /* Info.plist */,
+				38A134D81C291E4A00E1B4A9 /* TestLogger.swift */,
+				38A134DB1C291F2A00E1B4A9 /* SBObjectiveCMacroTests.m */,
+				38A134E01C29298C00E1B4A9 /* Supporting Files */,
 			);
 			path = SBObjectiveCWrapperTests;
 			sourceTree = "<group>";
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				38A1349A1C28F71700E1B4A9 /* SBObjectiveCWrapper.swift */,
+				38A134D11C290D7200E1B4A9 /* SBObjectiveCWrapper.h */,
 			);
 			name = sources;
 			path = ../sources;
@@ -156,10 +159,18 @@
 		38A134C51C29093E00E1B4A9 /* SBObjectiveCWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				38A134C61C29093E00E1B4A9 /* SBObjectiveCWrapper.h */,
 				38A134C81C29093E00E1B4A9 /* Info.plist */,
 			);
 			path = SBObjectiveCWrapper;
+			sourceTree = "<group>";
+		};
+		38A134E01C29298C00E1B4A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38A134DA1C291F2A00E1B4A9 /* SBObjectiveCWrapperTests-Bridging-Header.h */,
+				38A1348C1C28F22900E1B4A9 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A134D21C290D7200E1B4A9 /* SBObjectiveCWrapper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +188,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A134D31C290D7200E1B4A9 /* SBObjectiveCWrapper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +196,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A134D41C290D7200E1B4A9 /* SBObjectiveCWrapper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +204,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38A134C71C29093E00E1B4A9 /* SBObjectiveCWrapper.h in Headers */,
+				38A134D51C290D7200E1B4A9 /* SBObjectiveCWrapper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,8 +340,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				38A1347A1C28F22900E1B4A9 /* SBObjectiveCWrapper (iOS) */,
 				38A134841C28F22900E1B4A9 /* SBObjectiveCWrapperTests */,
+				38A1347A1C28F22900E1B4A9 /* SBObjectiveCWrapper (iOS) */,
 				38A134A31C29078D00E1B4A9 /* SBObjectiveCWrapper (watchOS) */,
 				38A134B21C29083A00E1B4A9 /* SBObjectiveCWrapper (tvOS) */,
 				38A134C31C29093D00E1B4A9 /* SBObjectiveCWrapper (OSX) */,
@@ -386,7 +400,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A134DC1C291F2A00E1B4A9 /* SBObjectiveCMacroTests.m in Sources */,
 				38A1348B1C28F22900E1B4A9 /* SBObjectiveCWrapperTests.swift in Sources */,
+				38A134D91C291E4A00E1B4A9 /* TestLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A134D61C290FF900E1B4A9 /* SBObjectiveCWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A134D71C290FFA00E1B4A9 /* SBObjectiveCWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,7 +537,9 @@
 		38A134901C28F22900E1B4A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -538,7 +558,9 @@
 		38A134911C28F22900E1B4A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -556,29 +578,34 @@
 		38A134931C28F22900E1B4A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = SBObjectiveCWrapperTests/Info.plist;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "SBObjectiveCWrapperTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SwiftyBeaver.SBObjectiveCWrapperTests;
 				PRODUCT_MODULE_NAME = SBObjectiveCWrapperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SBObjectiveCWrapperTests/Supporting Files/SBObjectiveCWrapperTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		38A134941C28F22900E1B4A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = SBObjectiveCWrapperTests/Info.plist;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "SBObjectiveCWrapperTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SwiftyBeaver.SBObjectiveCWrapperTests;
 				PRODUCT_MODULE_NAME = SBObjectiveCWrapperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SBObjectiveCWrapperTests/Supporting Files/SBObjectiveCWrapperTests-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		38A134AA1C29078D00E1B4A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -599,7 +626,7 @@
 		38A134AB1C29078D00E1B4A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -620,6 +647,7 @@
 		38A134B91C29083A00E1B4A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -640,6 +668,7 @@
 		38A134BA1C29083A00E1B4A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -660,6 +689,7 @@
 		38A134CA1C29093E00E1B4A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -682,6 +712,7 @@
 		38A134CB1C29093E00E1B4A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
