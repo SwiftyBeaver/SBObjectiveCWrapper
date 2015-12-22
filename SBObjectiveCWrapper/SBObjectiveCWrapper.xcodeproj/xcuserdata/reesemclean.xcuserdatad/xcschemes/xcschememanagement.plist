@@ -4,10 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SBObjectiveCWrapper.xcscheme</key>
+		<key>SBObjectiveCWrapper (OSX).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>SBObjectiveCWrapper (iOS).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>SBObjectiveCWrapper (tvOS).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>SBObjectiveCWrapper (watchOS).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +33,21 @@
 			<true/>
 		</dict>
 		<key>38A134841C28F22900E1B4A9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>38A134A31C29078D00E1B4A9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>38A134B21C29083A00E1B4A9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>38A134C31C29093D00E1B4A9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

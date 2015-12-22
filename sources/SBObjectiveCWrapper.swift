@@ -6,6 +6,7 @@
 //  Copyright © 2015 Reese McLean. All rights reserved.
 //
 
+import Foundation
 import SwiftyBeaver
 
 public class SwiftyBeaverObjC: NSObject {

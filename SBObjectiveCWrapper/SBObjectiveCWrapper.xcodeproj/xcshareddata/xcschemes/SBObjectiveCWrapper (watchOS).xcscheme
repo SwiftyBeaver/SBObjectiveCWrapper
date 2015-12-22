@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "38A1347A1C28F22900E1B4A9"
-               BuildableName = "SBObjectiveCWrapper (iOS).framework"
-               BlueprintName = "SBObjectiveCWrapper (iOS)"
+               BlueprintIdentifier = "38A134A31C29078D00E1B4A9"
+               BuildableName = "SBObjectiveCWrapper.framework"
+               BlueprintName = "SBObjectiveCWrapper (watchOS)"
                ReferencedContainer = "container:SBObjectiveCWrapper.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "38A134841C28F22900E1B4A9"
-               BuildableName = "SBObjectiveCWrapperTests.xctest"
-               BlueprintName = "SBObjectiveCWrapperTests"
-               ReferencedContainer = "container:SBObjectiveCWrapper.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "38A1347A1C28F22900E1B4A9"
-            BuildableName = "SBObjectiveCWrapper (iOS).framework"
-            BlueprintName = "SBObjectiveCWrapper (iOS)"
-            ReferencedContainer = "container:SBObjectiveCWrapper.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "38A1347A1C28F22900E1B4A9"
-            BuildableName = "SBObjectiveCWrapper (iOS).framework"
-            BlueprintName = "SBObjectiveCWrapper (iOS)"
+            BlueprintIdentifier = "38A134A31C29078D00E1B4A9"
+            BuildableName = "SBObjectiveCWrapper.framework"
+            BlueprintName = "SBObjectiveCWrapper (watchOS)"
             ReferencedContainer = "container:SBObjectiveCWrapper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "38A1347A1C28F22900E1B4A9"
-            BuildableName = "SBObjectiveCWrapper (iOS).framework"
-            BlueprintName = "SBObjectiveCWrapper (iOS)"
+            BlueprintIdentifier = "38A134A31C29078D00E1B4A9"
+            BuildableName = "SBObjectiveCWrapper.framework"
+            BlueprintName = "SBObjectiveCWrapper (watchOS)"
             ReferencedContainer = "container:SBObjectiveCWrapper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
