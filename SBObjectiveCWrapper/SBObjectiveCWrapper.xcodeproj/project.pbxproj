@@ -33,7 +33,6 @@
 		38A134971C28F2BB00E1B4A9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../SwiftyBeaver/README.md; sourceTree = "<group>"; };
 		38A134981C28F2ED00E1B4A9 /* SBObjectiveCWrapper.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = SBObjectiveCWrapper.podspec; path = ../SBObjectiveCWrapper.podspec; sourceTree = "<group>"; };
 		38A1349A1C28F71700E1B4A9 /* SBObjectiveCWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBObjectiveCWrapper.swift; sourceTree = "<group>"; };
-		38A1349C1C28FE8800E1B4A9 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cartfile; path = ../Cartfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +57,6 @@
 		38A134711C28F22900E1B4A9 = {
 			isa = PBXGroup;
 			children = (
-				38A1349C1C28FE8800E1B4A9 /* Cartfile */,
 				38A134951C28F26F00E1B4A9 /* .gitIgnore */,
 				38A134961C28F29200E1B4A9 /* LICENSE */,
 				38A134971C28F2BB00E1B4A9 /* README.md */,
