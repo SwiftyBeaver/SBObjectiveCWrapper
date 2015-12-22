@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../lib/SwiftyBeaver/SwiftyBeaver.xcodeproj">
+      location = "group:lib/SwiftyBeaver/SwiftyBeaver.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:SBObjectiveCWrapper.xcodeproj">
