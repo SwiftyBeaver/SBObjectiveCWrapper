@@ -23,11 +23,7 @@ extension SwiftyBeaver: Loggable {}
 
 public class SBObjectiveCWrapper: NSObject {
     
-    @objc public class func logClassForTesting() -> AnyObject {
-        return logClass
-    }
-    
-    @objc public class func setLogClassForTesting(logClass: AnyObject) {
+    @objc class func _setLogClassForTesting(logClass: AnyObject) {
         self.logClass = logClass as! Loggable.Type
     }
     

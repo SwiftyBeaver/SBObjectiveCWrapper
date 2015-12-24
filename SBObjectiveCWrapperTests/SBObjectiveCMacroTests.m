@@ -11,6 +11,12 @@
 @import SBObjectiveCWrapper;
 #import "SBObjectiveCWrapperTests-Swift.h"
 
+@interface SBObjectiveCWrapper ()
+
+-(void) _setLogClassForTesting:(id)logClass;
+
+@end
+
 @interface SBObjectiveCMacroTests : XCTestCase
 
 @end
@@ -21,7 +27,7 @@
     [super setUp];
     
     [TestLogger setLastLog:nil];
-    [SBObjectiveCWrapper setLogClassForTesting:[TestLogger class]];
+    [SBObjectiveCWrapper performSelector:@selector(_setLogClassForTesting:) withObject:[TestLogger class]];
     
 }
 
