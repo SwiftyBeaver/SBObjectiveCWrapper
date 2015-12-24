@@ -102,4 +102,4 @@ SBLogError(@"This is an error message.");
 If you have questions please contact us via the dedicated [SwiftyBeaver Twitter account](https://twitter.com/SwiftyBeaver). Feature requests or bugs are better reported and discussed as Github Issue.
 
 ## License
-SwiftyBeaver is released under the [MIT License](https://github.com/SwiftyBeaver/SwiftyBeaver/blob/master/LICENSE).
+SBObjectiveCWrapper is released under the [MIT License](https://github.com/SwiftyBeaver/SwiftyBeaver/blob/master/LICENSE).
