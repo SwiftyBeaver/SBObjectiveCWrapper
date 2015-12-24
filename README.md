@@ -60,7 +60,7 @@ Prerequisite: Make sure you have SwiftyBeaver installed! Follow the installation
 
 In order to use the SwiftyBeaver Objective-C Wrapper you must get your logging environment setup using Swift.
 
-*If you already have SwiftyBeaver working with Swift you can skip ahead to the _Objective-C_ header.*
+*If you already have SwiftyBeaver working with Swift you can skip ahead to the _Objective-C_ section.*
 
 ###SwiftyBeaver Setup
 
