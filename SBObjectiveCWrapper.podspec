@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     s.watchos.deployment_target = "2.0"
     s.tvos.deployment_target = "9.0"
     s.osx.deployment_target = "10.9"
-    s.source       = { :git => "https://github.com/SwiftyBeaver/SBObjectiveCWrapper.git", :tag => s.version.to_s }
+    s.source       = { :git => "https://github.com/SwiftyBeaver/SBObjectiveCWrapper.git", :tag => "v" + s.version.to_s }
     s.source_files  = "sources"
     s.dependency 'SwiftyBeaver', '~> 0.3.0'
 end
