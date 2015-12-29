@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     SBLogVerbose(@"View Did Load");
+    SBLogWarning(@"Message with formatting: %@", @"Hello");
 }
 
 - (void)didReceiveMemoryWarning {

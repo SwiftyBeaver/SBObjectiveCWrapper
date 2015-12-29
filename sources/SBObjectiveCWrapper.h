@@ -8,8 +8,8 @@
 
 @import Foundation;
 
-#define SBLogWarning(message) [SBObjectiveCWrapper logWarning: message filePath:[NSString stringWithUTF8String:__FILE__] function:[NSString stringWithUTF8String:__FUNCTION__] line:__LINE__]
-#define SBLogInfo(message) [SBObjectiveCWrapper logInfo: message filePath:[NSString stringWithUTF8String:__FILE__] function:[NSString stringWithUTF8String:__FUNCTION__] line:__LINE__]
-#define SBLogDebug(message) [SBObjectiveCWrapper logDebug: message filePath:[NSString stringWithUTF8String:__FILE__] function:[NSString stringWithUTF8String:__FUNCTION__] line:__LINE__]
-#define SBLogVerbose(message) [SBObjectiveCWrapper logVerbose: message filePath:[NSString stringWithUTF8String:__FILE__] function:[NSString stringWithUTF8String:__FUNCTION__] line:__LINE__]
-#define SBLogError(message) [SBObjectiveCWrapper logError: message filePath:[NSString stringWithUTF8String:__FILE__] function:[NSString stringWithUTF8String:__FUNCTION__] line:__LINE__]
+#define SBLogWarning(message, ...) [SBObjectiveCWrapper logWarning: [NSString stringWithFormat: message, ##__VA_ARGS__] filePath:[NSString stringWithUTF8String:__FILE__] function:[NSString stringWithUTF8String:__FUNCTION__] line:__LINE__]
+#define SBLogInfo(message, ...) [SBObjectiveCWrapper logInfo: [NSString stringWithFormat: message, ##__VA_ARGS__] filePath:[NSString stringWithUTF8String:__FILE__] function:[NSString stringWithUTF8String:__FUNCTION__] line:__LINE__]
+#define SBLogDebug(message, ...) [SBObjectiveCWrapper logDebug: [NSString stringWithFormat: message, ##__VA_ARGS__] filePath:[NSString stringWithUTF8String:__FILE__] function:[NSString stringWithUTF8String:__FUNCTION__] line:__LINE__]
+#define SBLogVerbose(message, ...) [SBObjectiveCWrapper logVerbose: [NSString stringWithFormat: message, ##__VA_ARGS__] filePath:[NSString stringWithUTF8String:__FILE__] function:[NSString stringWithUTF8String:__FUNCTION__] line:__LINE__]
+#define SBLogError(message, ...) [SBObjectiveCWrapper logError: [NSString stringWithFormat: message, ##__VA_ARGS__] filePath:[NSString stringWithUTF8String:__FILE__] function:[NSString stringWithUTF8String:__FUNCTION__] line:__LINE__]
