@@ -41,7 +41,7 @@ This will also install SwiftyBeaver if it is not installed already.
 
 To use [CocoaPods](https://cocoapods.org) just add this to your Podfile:
 ```
-pod 'SBObjectiveCWrapper', '~> 0.1.1'
+pod 'SBObjectiveCWrapper', '~> 0.1.2'
 ```
 
 This will also install SwiftyBeaver if it is not installed already.
