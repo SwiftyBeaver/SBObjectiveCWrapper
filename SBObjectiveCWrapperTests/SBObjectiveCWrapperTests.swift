@@ -17,7 +17,6 @@ class SBObjectiveCWrapperTests: XCTestCase {
         
         let testLoggerClass = TestLogger.self
         testLoggerClass.lastLog = nil
-        //testLoggerClass.setLastLog(nil)
         SBObjectiveCWrapper.self.logClass = testLoggerClass
     
     }

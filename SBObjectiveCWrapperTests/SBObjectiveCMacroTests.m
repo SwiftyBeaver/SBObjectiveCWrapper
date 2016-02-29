@@ -40,9 +40,9 @@
     NSString *message = @"Message";
     NSInteger line = __LINE__;
     NSInteger lineOffset = 4;
-    
+        
     Log *log = [[Log alloc] initWithLevel: LogLevelVerbose message: message path: [NSString stringWithUTF8String:__FILE__] function: [NSString stringWithUTF8String:__FUNCTION__] line: line + lineOffset];
-    SBLogVerbose(message);
+    SBLogVerbose(@"%@", message);
     XCTAssert([log isEqual:[TestLogger lastLog]]);
     
 }
@@ -54,7 +54,7 @@
     NSInteger lineOffset = 4;
     
     Log *log = [[Log alloc] initWithLevel: LogLevelDebug message: message path: [NSString stringWithUTF8String:__FILE__] function: [NSString stringWithUTF8String:__FUNCTION__] line: line + lineOffset];
-    SBLogDebug(message);
+    SBLogDebug(@"%@", message);
     XCTAssert([log isEqual:[TestLogger lastLog]]);
     
 }
@@ -66,7 +66,7 @@
     NSInteger lineOffset = 4;
     
     Log *log = [[Log alloc] initWithLevel: LogLevelInfo message: message path: [NSString stringWithUTF8String:__FILE__] function: [NSString stringWithUTF8String:__FUNCTION__] line: line + lineOffset];
-    SBLogInfo(message);
+    SBLogInfo(@"%@", message);
     XCTAssert([log isEqual:[TestLogger lastLog]]);
     
 }
@@ -78,7 +78,7 @@
     NSInteger lineOffset = 4;
     
     Log *log = [[Log alloc] initWithLevel: LogLevelWarning message: message path: [NSString stringWithUTF8String:__FILE__] function: [NSString stringWithUTF8String:__FUNCTION__] line: line + lineOffset];
-    SBLogWarning(message);
+    SBLogWarning(@"%@", message);
     XCTAssert([log isEqual:[TestLogger lastLog]]);
     
 }
@@ -90,7 +90,7 @@
     NSInteger lineOffset = 4;
     
     Log *log = [[Log alloc] initWithLevel: LogLevelError message: message path: [NSString stringWithUTF8String:__FILE__] function: [NSString stringWithUTF8String:__FUNCTION__] line: line + lineOffset];
-    SBLogError(message);
+    SBLogError(@"%@", message);
     XCTAssert([log isEqual:[TestLogger lastLog]]);
     
 }

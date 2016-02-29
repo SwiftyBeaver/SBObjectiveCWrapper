@@ -40,32 +40,24 @@ class TestLogger: NSObject, Loggable {
     
     static var lastLog: Log?
     
-//    class func setLastLog(log: Log?) {
-//        _lastLog = log
-//    }
-//    
-//    class func lastLog() -> Log? {
-//        return _lastLog
-//    }
-    
-    class func verbose(msg: Any, _ path: String, _ function: String, line: Int) {
-        lastLog = Log(level: .Verbose, message: String(msg), path: path, function: function, line: line)
+    class func verbose(@autoclosure msg: () -> Any, _ path: String, _ function: String, line: Int) {
+        lastLog = Log(level: .Verbose, message: String(msg()), path: path, function: function, line: line)
     }
     
-    class func debug(msg: Any, _ path: String, _ function: String, line: Int) {
-        lastLog = Log(level: .Debug, message: String(msg), path: path, function: function, line: line)
+    class func debug(@autoclosure msg: () -> Any, _ path: String, _ function: String, line: Int) {
+        lastLog = Log(level: .Debug, message: String(msg()), path: path, function: function, line: line)
     }
     
-    class func info(msg: Any, _ path: String, _ function: String, line: Int) {
-        lastLog = Log(level: .Info, message: String(msg), path: path, function: function, line: line)
+    class func info(@autoclosure msg: () -> Any, _ path: String, _ function: String, line: Int) {
+        lastLog = Log(level: .Info, message: String(msg()), path: path, function: function, line: line)
     }
     
-    class func warning(msg: Any, _ path: String, _ function: String, line: Int) {
-        lastLog = Log(level: .Warning, message: String(msg), path: path, function: function, line: line)
+    class func warning(@autoclosure msg: () -> Any, _ path: String, _ function: String, line: Int) {
+        lastLog = Log(level: .Warning, message: String(msg()), path: path, function: function, line: line)
     }
     
-    class func error(msg: Any, _ path: String, _ function: String, line: Int) {
-        lastLog = Log(level: .Error, message: String(msg), path: path, function: function, line: line)
+    class func error(@autoclosure msg: () -> Any, _ path: String, _ function: String, line: Int) {
+        lastLog = Log(level: .Error, message: String(msg()), path: path, function: function, line: line)
     }
     
 }

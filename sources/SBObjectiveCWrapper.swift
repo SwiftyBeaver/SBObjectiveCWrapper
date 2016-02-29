@@ -11,11 +11,11 @@ import SwiftyBeaver
 
 protocol Loggable: class {
     
-    static func verbose(msg: Any, _ path: String, _ function: String, line: Int)
-    static func debug(msg: Any, _ path: String, _ function: String, line: Int)
-    static func info(msg: Any, _ path: String, _ function: String, line: Int)
-    static func warning(msg: Any, _ path: String, _ function: String, line: Int)
-    static func error(msg: Any, _ path: String, _ function: String, line: Int)
+    static func verbose(@autoclosure msg: () -> Any, _ path: String, _ function: String, line: Int)
+    static func debug(@autoclosure msg: () -> Any, _ path: String, _ function: String, line: Int)
+    static func info(@autoclosure msg: () -> Any, _ path: String, _ function: String, line: Int)
+    static func warning(@autoclosure msg: () -> Any, _ path: String, _ function: String, line: Int)
+    static func error(@autoclosure msg: () -> Any, _ path: String, _ function: String, line: Int)
     
 }
 
