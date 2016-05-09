@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		389EA9641C292B76005019A0 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389EA9631C292B76005019A0 /* SwiftyBeaver.framework */; };
-		389EA9661C292B7C005019A0 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389EA9651C292B7C005019A0 /* SwiftyBeaver.framework */; };
-		389EA9681C292B81005019A0 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389EA9671C292B81005019A0 /* SwiftyBeaver.framework */; };
-		389EA96A1C292B85005019A0 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389EA9691C292B85005019A0 /* SwiftyBeaver.framework */; };
 		389EA9991C2BB6C7005019A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389EA9981C2BB6C7005019A0 /* AppDelegate.swift */; };
 		389EA99E1C2BB6C7005019A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 389EA99C1C2BB6C7005019A0 /* Main.storyboard */; };
 		389EA9A01C2BB6C7005019A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 389EA99F1C2BB6C7005019A0 /* Assets.xcassets */; };
@@ -42,10 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		389EA9631C292B76005019A0 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = "lib/SwiftyBeaver/build/Debug-iphoneos/SwiftyBeaver.framework"; sourceTree = "<group>"; };
-		389EA9651C292B7C005019A0 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = "lib/SwiftyBeaver/build/Debug-watchos/SwiftyBeaver.framework"; sourceTree = "<group>"; };
-		389EA9671C292B81005019A0 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = "lib/SwiftyBeaver/build/Debug-appletvos/SwiftyBeaver.framework"; sourceTree = "<group>"; };
-		389EA9691C292B85005019A0 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = ../../../../../../../../Desktop/SBObjectiveCWrapper/lib/SwiftyBeaver/build/Debug/SwiftyBeaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		389EA9961C2BB6C6005019A0 /* Example-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		389EA9981C2BB6C7005019A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		389EA99D1C2BB6C7005019A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,7 +81,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				389EA9641C292B76005019A0 /* SwiftyBeaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +96,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				389EA9661C292B7C005019A0 /* SwiftyBeaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +103,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				389EA9681C292B81005019A0 /* SwiftyBeaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +110,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				389EA96A1C292B85005019A0 /* SwiftyBeaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,10 +162,6 @@
 				38A134891C28F22900E1B4A9 /* SBObjectiveCWrapperTests */,
 				389EA9971C2BB6C7005019A0 /* Example-iOS */,
 				38A1347C1C28F22900E1B4A9 /* Products */,
-				389EA9691C292B85005019A0 /* SwiftyBeaver.framework */,
-				389EA9671C292B81005019A0 /* SwiftyBeaver.framework */,
-				389EA9651C292B7C005019A0 /* SwiftyBeaver.framework */,
-				389EA9631C292B76005019A0 /* SwiftyBeaver.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -566,6 +550,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				INFOPLIST_FILE = "Example-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftyBeaver.Example-iOS";
@@ -581,6 +566,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				INFOPLIST_FILE = "Example-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftyBeaver.Example-iOS";
@@ -899,6 +885,7 @@
 				389EA9A61C2BB6C7005019A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38A134751C28F22900E1B4A9 /* Build configuration list for PBXProject "SBObjectiveCWrapper" */ = {
 			isa = XCConfigurationList;
