@@ -31,32 +31,59 @@ public class SBObjectiveCWrapper: NSObject {
     
     public class func logVerbose(message: String, filePath: String, function: String, line: Int) {
         
-        logClass.verbose(message, filePath, function, line: line)
+        logClass.verbose(message, filePath, self.convertFunction(function), line: line)
         
     }
     
     public class func logDebug(message: String, filePath: String, function: String, line: Int) {
         
-        logClass.debug(message, filePath, function, line: line)
+        logClass.debug(message, filePath, self.convertFunction(function), line: line)
         
     }
     
     public class func logInfo(message: String, filePath: String, function: String, line: Int) {
         
-        logClass.info(message, filePath, function, line: line)
+        logClass.info(message, filePath, self.convertFunction(function), line: line)
         
     }
     
     public class func logWarning(message: String, filePath: String, function: String, line: Int) {
         
-        logClass.warning(message, filePath, function, line: line)
+        logClass.warning(message, filePath, self.convertFunction(function), line: line)
         
     }
     
     public class func logError(message: String, filePath: String, function: String, line: Int) {
         
-        logClass.error(message, filePath, function, line: line)
+        logClass.error(message, filePath, self.convertFunction(function), line: line)
         
+    }
+    
+    public class func convertFunction(function: String) -> String {
+        var strippedFunction = function
+        
+        if let match = function.rangeOfString("\\w+:*[\\w*:*]*]", options: .RegularExpressionSearch) {
+            let endIndex = match.endIndex.predecessor()
+            let functionParts = function[match.startIndex..<endIndex].componentsSeparatedByString(":")
+
+            guard functionParts.count > 0 else { return function }
+            
+            for (index, part) in functionParts.enumerate() {
+                switch index {
+                case 0:
+                    strippedFunction = part
+                    if functionParts.count > 1 { strippedFunction += "(_:" }
+                default:
+                    if !part.isEmpty {
+                        strippedFunction += "\(part):"
+                    }
+                }
+            }
+            if functionParts.count > 1 { strippedFunction += ")" }
+            else if functionParts.count == 1 { strippedFunction += "()" }
+            
+        }
+        return strippedFunction
     }
     
 }
