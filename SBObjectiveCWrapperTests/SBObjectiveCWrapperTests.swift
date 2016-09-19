@@ -29,11 +29,11 @@ class SBObjectiveCWrapperTests: XCTestCase {
     func testCanLogVerbose() {
         
         let message = "Message"
-        let line = __LINE__
+        let line = #line
         
-        SBObjectiveCWrapper.logVerbose(message, filePath: __FILE__, function: __FUNCTION__, line: line)
+        SBObjectiveCWrapper.logVerbose(message, filePath: #file, function: #function, line: line)
         
-        let expectedLog = Log(level: .Verbose, message: message, path: __FILE__, function: __FUNCTION__, line: line)
+        let expectedLog = Log(level: .Verbose, message: message, path: #file, function: #function, line: line)
         
         XCTAssert(expectedLog == TestLogger.lastLog!, "Logger did not log.")
         
@@ -42,11 +42,11 @@ class SBObjectiveCWrapperTests: XCTestCase {
     func testCanLogDebug() {
         
         let message = "Message"
-        let line = __LINE__
+        let line = #line
 
-        SBObjectiveCWrapper.logDebug(message, filePath: __FILE__, function: __FUNCTION__, line: line)
+        SBObjectiveCWrapper.logDebug(message, filePath: #file, function: #function, line: line)
         
-        let expectedLog = Log(level: .Debug, message: message, path: __FILE__, function: __FUNCTION__, line: line)
+        let expectedLog = Log(level: .Debug, message: message, path: #file, function: #function, line: line)
 
         XCTAssert(expectedLog == TestLogger.lastLog!, "Logger did not log.")
         
@@ -55,11 +55,11 @@ class SBObjectiveCWrapperTests: XCTestCase {
     func testCanLogInfo() {
         
         let message = "Message"
-        let line = __LINE__
+        let line = #line
         
-        SBObjectiveCWrapper.logInfo(message, filePath: __FILE__, function: __FUNCTION__, line: line)
+        SBObjectiveCWrapper.logInfo(message, filePath: #file, function: #function, line: line)
         
-        let expectedLog = Log(level: .Info, message: message, path: __FILE__, function: __FUNCTION__, line: line)
+        let expectedLog = Log(level: .Info, message: message, path: #file, function: #function, line: line)
         
         XCTAssert(expectedLog == TestLogger.lastLog!, "Logger did not log.")
         
@@ -68,11 +68,11 @@ class SBObjectiveCWrapperTests: XCTestCase {
     func testCanLogWarning() {
         
         let message = "Message"
-        let line = __LINE__
+        let line = #line
         
-        SBObjectiveCWrapper.logWarning(message, filePath: __FILE__, function: __FUNCTION__, line: line)
+        SBObjectiveCWrapper.logWarning(message, filePath: #file, function: #function, line: line)
         
-        let expectedLog = Log(level: .Warning, message: message, path: __FILE__, function: __FUNCTION__, line: line)
+        let expectedLog = Log(level: .Warning, message: message, path: #file, function: #function, line: line)
         
         XCTAssert(expectedLog == TestLogger.lastLog!, "Logger did not log.")
         
@@ -81,11 +81,11 @@ class SBObjectiveCWrapperTests: XCTestCase {
     func testCanLogError() {
         
         let message = "Message"
-        let line = __LINE__
+        let line = #line
         
-        SBObjectiveCWrapper.logError(message, filePath: __FILE__, function: __FUNCTION__, line: line)
+        SBObjectiveCWrapper.logError(message, filePath: #file, function: #function, line: line)
         
-        let expectedLog = Log(level: .Error, message: message, path: __FILE__, function: __FUNCTION__, line: line)
+        let expectedLog = Log(level: .Error, message: message, path: #file, function: #function, line: line)
         
         XCTAssert(expectedLog == TestLogger.lastLog!, "Logger did not log.")
         
