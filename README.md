@@ -5,7 +5,7 @@
 ![Platform](https://img.shields.io/badge/Platform-tvOS%209%2B-blue.svg)
 ![Platform](https://img.shields.io/badge/Platform-watchOS%202%2B-blue.svg)
 <br/>
-[![Language Swift 2](https://img.shields.io/badge/Language-Swift%202-orange.svg)](https://developer.apple.com/swift)
+[![Language Swift 2.3](https://img.shields.io/badge/Language-Swift%202-orange.svg)](https://developer.apple.com/swift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg)](https://github.com/Carthage/Carthage)
 [![Cocoapods compatible](https://img.shields.io/cocoapods/v/SBObjectiveCWrapper.svg)]("https://cocoapods.org)
 
@@ -13,14 +13,14 @@ SBObjectiveCWrapper enables you to use [SwiftyBeaver](https://github.com/SwiftyB
 
 ## Requirements
 
-- iOS 8.0+ / Mac OS X 10.9+
-- Xcode 7
+- iOS 9.0+ / Mac OS X 10.9+
+- Xcode 8
 
 ## Installation
 
 #### Platform & Installation Support
 
-\ | iOS 8+ | OSX 10.9+ | watchOS 2+ | tvOS 9+
+\ | iOS 9+ | OSX 10.9+ | watchOS 2+ | tvOS 9+
 ------------- | ------------- | ------------- | ------------- | -------------
 [Carthage](https://github.com/Carthage/Carthage) | <center>✅</center> | <center>✅</center> | <center>✅</center> | <center>✅</center>
 [CocoaPods](https://cocoapods.org) | <center>✅</center> | <center>✅</center> | <center>✅</center> | <center>✅</center>
@@ -41,7 +41,7 @@ This will also install SwiftyBeaver if it is not installed already.
 
 To use [CocoaPods](https://cocoapods.org) just add this to your Podfile:
 ```
-pod 'SBObjectiveCWrapper', '~> 0.2.0'
+pod 'SBObjectiveCWrapper', '~> 0.7.0'
 ```
 
 This will also install SwiftyBeaver if it is not installed already.
