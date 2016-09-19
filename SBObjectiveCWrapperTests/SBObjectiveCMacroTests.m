@@ -41,9 +41,10 @@
     NSInteger line = __LINE__;
     NSInteger lineOffset = 4;
         
-    Log *log = [[Log alloc] initWithLevel: LogLevelVerbose message: message path: [NSString stringWithUTF8String:__FILE__] function: [NSString stringWithUTF8String:__FUNCTION__] line: line + lineOffset];
+    Log *log = [[Log alloc] initWithLevel: LogLevelVerbose message: message path: [NSString stringWithUTF8String:__FILE__] function: @"testCanUseVerboseMacro()" line: line + lineOffset];
     SBLogVerbose(@"%@", message);
-    XCTAssert([log isEqual:[TestLogger lastLog]]);
+    Log *lastLog = [TestLogger lastLog];
+    XCTAssert([log isEqual:lastLog]);
     
 }
 
@@ -53,7 +54,7 @@
     NSInteger line = __LINE__;
     NSInteger lineOffset = 4;
     
-    Log *log = [[Log alloc] initWithLevel: LogLevelDebug message: message path: [NSString stringWithUTF8String:__FILE__] function: [NSString stringWithUTF8String:__FUNCTION__] line: line + lineOffset];
+    Log *log = [[Log alloc] initWithLevel: LogLevelDebug message: message path: [NSString stringWithUTF8String:__FILE__] function: @"testCanUseDebugMacro()" line: line + lineOffset];
     SBLogDebug(@"%@", message);
     XCTAssert([log isEqual:[TestLogger lastLog]]);
     
@@ -65,7 +66,7 @@
     NSInteger line = __LINE__;
     NSInteger lineOffset = 4;
     
-    Log *log = [[Log alloc] initWithLevel: LogLevelInfo message: message path: [NSString stringWithUTF8String:__FILE__] function: [NSString stringWithUTF8String:__FUNCTION__] line: line + lineOffset];
+    Log *log = [[Log alloc] initWithLevel: LogLevelInfo message: message path: [NSString stringWithUTF8String:__FILE__] function: @"testCanUseInfoMacro()" line: line + lineOffset];
     SBLogInfo(@"%@", message);
     XCTAssert([log isEqual:[TestLogger lastLog]]);
     
@@ -77,7 +78,7 @@
     NSInteger line = __LINE__;
     NSInteger lineOffset = 4;
     
-    Log *log = [[Log alloc] initWithLevel: LogLevelWarning message: message path: [NSString stringWithUTF8String:__FILE__] function: [NSString stringWithUTF8String:__FUNCTION__] line: line + lineOffset];
+    Log *log = [[Log alloc] initWithLevel: LogLevelWarning message: message path: [NSString stringWithUTF8String:__FILE__] function: @"testCanUseWarningMacro()" line: line + lineOffset];
     SBLogWarning(@"%@", message);
     XCTAssert([log isEqual:[TestLogger lastLog]]);
     
@@ -89,7 +90,7 @@
     NSInteger line = __LINE__;
     NSInteger lineOffset = 4;
     
-    Log *log = [[Log alloc] initWithLevel: LogLevelError message: message path: [NSString stringWithUTF8String:__FILE__] function: [NSString stringWithUTF8String:__FUNCTION__] line: line + lineOffset];
+    Log *log = [[Log alloc] initWithLevel: LogLevelError message: message path: [NSString stringWithUTF8String:__FILE__] function: @"testCanUseErrorMacro()" line: line + lineOffset];
     SBLogError(@"%@", message);
     XCTAssert([log isEqual:[TestLogger lastLog]]);
     

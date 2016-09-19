@@ -20,7 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let consoleDestination = ConsoleDestination()
         consoleDestination.minLevel = .Warning
-        consoleDestination.addMinLevelFilter(.Verbose, path: "UnfilteredViewController.m")
+
+        let filter = PathFilterFactory.endsWith("UnfilteredViewController.m")
+        consoleDestination.addFilter(filter);
+        
         log.addDestination(consoleDestination)
         
         return true
