@@ -11,64 +11,64 @@ import SwiftyBeaver
 
 protocol Loggable: class {
     
-    static func verbose(@autoclosure msg: () -> Any, _ path: String, _ function: String, line: Int)
-    static func debug(@autoclosure msg: () -> Any, _ path: String, _ function: String, line: Int)
-    static func info(@autoclosure msg: () -> Any, _ path: String, _ function: String, line: Int)
-    static func warning(@autoclosure msg: () -> Any, _ path: String, _ function: String, line: Int)
-    static func error(@autoclosure msg: () -> Any, _ path: String, _ function: String, line: Int)
+    static func verbose(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int)
+    static func debug(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int)
+    static func info(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int)
+    static func warning(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int)
+    static func error(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int)
     
 }
 
 extension SwiftyBeaver: Loggable {}
 
-public class SBObjectiveCWrapper: NSObject {
+open class SBObjectiveCWrapper: NSObject {
     
-    @objc class func _setLogClassForTesting(logClass: AnyObject) {
+    @objc class func _setLogClassForTesting(_ logClass: AnyObject) {
         self.logClass = logClass as! Loggable.Type
     }
     
     static var logClass: Loggable.Type = SwiftyBeaver.self
     
-    public class func logVerbose(message: String, filePath: String, function: String, line: Int) {
+    open class func logVerbose(_ message: String, filePath: String, function: String, line: Int) {
         
         logClass.verbose(message, filePath, self.convertFunction(function), line: line)
         
     }
     
-    public class func logDebug(message: String, filePath: String, function: String, line: Int) {
+    open class func logDebug(_ message: String, filePath: String, function: String, line: Int) {
         
         logClass.debug(message, filePath, self.convertFunction(function), line: line)
         
     }
     
-    public class func logInfo(message: String, filePath: String, function: String, line: Int) {
+    open class func logInfo(_ message: String, filePath: String, function: String, line: Int) {
         
         logClass.info(message, filePath, self.convertFunction(function), line: line)
         
     }
     
-    public class func logWarning(message: String, filePath: String, function: String, line: Int) {
+    open class func logWarning(_ message: String, filePath: String, function: String, line: Int) {
         
         logClass.warning(message, filePath, self.convertFunction(function), line: line)
         
     }
     
-    public class func logError(message: String, filePath: String, function: String, line: Int) {
+    open class func logError(_ message: String, filePath: String, function: String, line: Int) {
         
         logClass.error(message, filePath, self.convertFunction(function), line: line)
         
     }
     
-    public class func convertFunction(function: String) -> String {
+    open class func convertFunction(_ function: String) -> String {
         var strippedFunction = function
         
-        if let match = function.rangeOfString("\\w+:*[\\w*:*]*]", options: .RegularExpressionSearch) {
-            let endIndex = match.endIndex.predecessor()
-            let functionParts = function[match.startIndex..<endIndex].componentsSeparatedByString(":")
+        if let match = function.range(of: "\\w+:*[\\w*:*]*]", options: .regularExpression) {
+            let endIndex = function.index(before: match.upperBound)
+            let functionParts = function[match.lowerBound..<endIndex].components(separatedBy: ":")
 
             guard functionParts.count > 0 else { return function }
             
-            for (index, part) in functionParts.enumerate() {
+            for (index, part) in functionParts.enumerated() {
                 switch index {
                 case 0:
                     strippedFunction = part
