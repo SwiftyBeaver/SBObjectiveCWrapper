@@ -28,16 +28,16 @@ Download | <center>✅</center> | <center>✅</center> | <center>✅</center> | 
 
 For installation details please see the next points.
 
-#### via Carthage
+### via Carthage
 
 You can use [Carthage](https://github.com/Carthage/Carthage) to install SBObjectiveCWrapper by adding this to your Cartfile:
 
-### Swift 3.0
+#### Swift 3.0
 ```
 github "SwiftyBeaver/SBObjectiveCWrapper"
 ```
 
-### Swift 2.3
+#### Swift 2.3
 
 ```
 github "SwiftyBeaver/SwiftyBeaver" ~> 0.7
@@ -45,17 +45,17 @@ github "SwiftyBeaver/SwiftyBeaver" ~> 0.7
 
 This will also install SwiftyBeaver if it is not installed already.
 
-#### via CocoaPods
+### via CocoaPods
 
 To use [CocoaPods](https://cocoapods.org) just add this to your Podfile:
 
-### Swift 3.0
+#### Swift 3.0
 
 ```
 pod 'SBObjectiveCWrapper', '~> 1.1.0'
 ```
 
-### Swift 2.3
+#### Swift 2.3
 
 ```
 pod 'SBObjectiveCWrapper', '~> 0.7.0'
@@ -63,7 +63,7 @@ pod 'SBObjectiveCWrapper', '~> 0.7.0'
 
 This will also install SwiftyBeaver if it is not installed already.
 
-#### or Download
+### or Download
 
 Prerequisite: Make sure you have SwiftyBeaver installed! Follow the installation directions here: [SwiftyBeaver](https://github.com/SwiftyBeaver/SwiftyBeaver)
 
