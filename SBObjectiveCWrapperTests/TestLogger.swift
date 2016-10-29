@@ -27,9 +27,8 @@ class Log: NSObject {
         self.function = function
         self.line = line
     }
-    
-    override func isEqual(object: AnyObject?) -> Bool {
-        
+
+    override func isEqual(_ object: Any?) -> Bool {
         guard let object = object as? Log else { return false }
         
         return self.level == object.level && self.message == object.message && self.path == object.path && self.function == object.function && self.line == object.line
@@ -40,24 +39,24 @@ class TestLogger: NSObject, Loggable {
     
     static var lastLog: Log?
     
-    class func verbose(@autoclosure msg: () -> Any, _ path: String, _ function: String, line: Int) {
-        lastLog = Log(level: .Verbose, message: String(msg()), path: path, function: function, line: line)
+    class func verbose( _ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int) {
+        lastLog = Log(level: .Verbose, message: String(describing: msg()), path: path, function: function, line: line)
     }
     
-    class func debug(@autoclosure msg: () -> Any, _ path: String, _ function: String, line: Int) {
-        lastLog = Log(level: .Debug, message: String(msg()), path: path, function: function, line: line)
+    class func debug( _ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int) {
+        lastLog = Log(level: .Debug, message: String(describing: msg()), path: path, function: function, line: line)
     }
     
-    class func info(@autoclosure msg: () -> Any, _ path: String, _ function: String, line: Int) {
-        lastLog = Log(level: .Info, message: String(msg()), path: path, function: function, line: line)
+    class func info( _ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int) {
+        lastLog = Log(level: .Info, message: String(describing: msg()), path: path, function: function, line: line)
     }
     
-    class func warning(@autoclosure msg: () -> Any, _ path: String, _ function: String, line: Int) {
-        lastLog = Log(level: .Warning, message: String(msg()), path: path, function: function, line: line)
+    class func warning( _ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int) {
+        lastLog = Log(level: .Warning, message: String(describing: msg()), path: path, function: function, line: line)
     }
     
-    class func error(@autoclosure msg: () -> Any, _ path: String, _ function: String, line: Int) {
-        lastLog = Log(level: .Error, message: String(msg()), path: path, function: function, line: line)
+    class func error(@autoclosure _ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int) {
+        lastLog = Log(level: .Error, message: String(describing: msg()), path: path, function: function, line: line)
     }
     
 }
