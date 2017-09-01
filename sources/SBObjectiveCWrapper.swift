@@ -11,17 +11,17 @@ import SwiftyBeaver
 
 protocol Loggable: class {
     
-    static func verbose(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int)
-    static func debug(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int)
-    static func info(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int)
-    static func warning(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int)
-    static func error(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int)
+    static func verbose(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int, context: Any?)
+    static func debug(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int, context: Any?)
+    static func info(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int, context: Any?)
+    static func warning(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int, context: Any?)
+    static func error(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int, context: Any?)
     
 }
 
 extension SwiftyBeaver: Loggable {}
 
-open class SBObjectiveCWrapper: NSObject {
+@objc open class SBObjectiveCWrapper: NSObject {
     
     @objc class func _setLogClassForTesting(_ logClass: AnyObject) {
         self.logClass = logClass as! Loggable.Type
@@ -29,37 +29,37 @@ open class SBObjectiveCWrapper: NSObject {
     
     static var logClass: Loggable.Type = SwiftyBeaver.self
     
-    open class func logVerbose(_ message: String, filePath: String, function: String, line: Int) {
+    @objc open class func logVerbose(_ message: String, filePath: String, function: String, line: Int) {
         
-        logClass.verbose(message, filePath, self.convertFunction(function), line: line)
-        
-    }
-    
-    open class func logDebug(_ message: String, filePath: String, function: String, line: Int) {
-        
-        logClass.debug(message, filePath, self.convertFunction(function), line: line)
+        logClass.verbose(message, filePath, self.convertFunction(function), line: line, context: nil)
         
     }
     
-    open class func logInfo(_ message: String, filePath: String, function: String, line: Int) {
+    @objc open class func logDebug(_ message: String, filePath: String, function: String, line: Int) {
         
-        logClass.info(message, filePath, self.convertFunction(function), line: line)
-        
-    }
-    
-    open class func logWarning(_ message: String, filePath: String, function: String, line: Int) {
-        
-        logClass.warning(message, filePath, self.convertFunction(function), line: line)
+        logClass.debug(message, filePath, self.convertFunction(function), line: line, context: nil)
         
     }
     
-    open class func logError(_ message: String, filePath: String, function: String, line: Int) {
+    @objc open class func logInfo(_ message: String, filePath: String, function: String, line: Int) {
         
-        logClass.error(message, filePath, self.convertFunction(function), line: line)
+        logClass.info(message, filePath, self.convertFunction(function), line: line, context: nil)
         
     }
     
-    open class func convertFunction(_ function: String) -> String {
+    @objc open class func logWarning(_ message: String, filePath: String, function: String, line: Int) {
+        
+        logClass.warning(message, filePath, self.convertFunction(function), line: line, context: nil)
+        
+    }
+    
+    @objc open class func logError(_ message: String, filePath: String, function: String, line: Int) {
+        
+        logClass.error(message, filePath, self.convertFunction(function), line: line, context: nil)
+        
+    }
+    
+    @objc open class func convertFunction(_ function: String) -> String {
         var strippedFunction = function
         
         if let match = function.range(of: "\\w+:*[\\w*:*]*]", options: .regularExpression) {
@@ -85,5 +85,4 @@ open class SBObjectiveCWrapper: NSObject {
         }
         return strippedFunction
     }
-    
 }
