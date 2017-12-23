@@ -58,7 +58,7 @@
 		38A134851C28F22900E1B4A9 /* SBObjectiveCWrapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBObjectiveCWrapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A1348A1C28F22900E1B4A9 /* SBObjectiveCWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBObjectiveCWrapperTests.swift; sourceTree = "<group>"; };
 		38A1348C1C28F22900E1B4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
-		38A134951C28F26F00E1B4A9 /* .gitIgnore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitIgnore; sourceTree = "<group>"; };
+		38A134951C28F26F00E1B4A9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		38A134961C28F29200E1B4A9 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		38A134971C28F2BB00E1B4A9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		38A134981C28F2ED00E1B4A9 /* SBObjectiveCWrapper.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SBObjectiveCWrapper.podspec; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				38A134D01C290A8D00E1B4A9 /* Cartfile */,
-				38A134951C28F26F00E1B4A9 /* .gitIgnore */,
+				38A134951C28F26F00E1B4A9 /* .gitignore */,
 				38A134961C28F29200E1B4A9 /* LICENSE */,
 				38A134971C28F2BB00E1B4A9 /* README.md */,
 				38A134981C28F2ED00E1B4A9 /* SBObjectiveCWrapper.podspec */,
