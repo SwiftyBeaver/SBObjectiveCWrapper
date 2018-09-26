@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "SBObjectiveCWrapper"
-    s.version      = "1.4.0"
+    s.version      = "1.6.1"
     s.summary      = "Objective-C wrapper and macros around SwiftyBeaver logging framework"
 
     s.description  = <<-DESC
@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
     s.osx.deployment_target = "10.11"
     s.source       = { :git => "https://github.com/SwiftyBeaver/SBObjectiveCWrapper.git", :tag => s.version.to_s }
     s.source_files  = "sources"
-    s.dependency 'SwiftyBeaver', '~> 1.4.0'
+    s.dependency 'SwiftyBeaver', '~> 1.6.1'
 end
