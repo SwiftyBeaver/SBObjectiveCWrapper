@@ -38,27 +38,27 @@ class Log: NSObject {
 class TestLogger: NSObject, Loggable {
     
     static var lastLog: Log?
-    
-    class func verbose( _ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int) {
+
+    static func verbose(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int, context: Any?) {
         lastLog = Log(level: .Verbose, message: String(describing: msg()), path: path, function: function, line: line)
     }
-    
-    class func debug( _ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int) {
+
+    static func debug(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int, context: Any?) {
         lastLog = Log(level: .Debug, message: String(describing: msg()), path: path, function: function, line: line)
     }
-    
-    class func info( _ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int) {
+
+    static func info(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int, context: Any?) {
         lastLog = Log(level: .Info, message: String(describing: msg()), path: path, function: function, line: line)
     }
-    
-    class func warning( _ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int) {
+
+    static func warning(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int, context: Any?) {
         lastLog = Log(level: .Warning, message: String(describing: msg()), path: path, function: function, line: line)
     }
-    
-    class func error(@autoclosure _ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int) {
+
+    static func error(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int, context: Any?) {
         lastLog = Log(level: .Error, message: String(describing: msg()), path: path, function: function, line: line)
     }
-    
+
 }
 
 func ==(lhs: Log, rhs: Log) -> Bool {
