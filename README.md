@@ -5,7 +5,7 @@
 ![Platform](https://img.shields.io/badge/Platform-tvOS%209%2B-blue.svg)
 ![Platform](https://img.shields.io/badge/Platform-watchOS%202%2B-blue.svg)
 <br/>
-[![Language Swift 2.3](https://img.shields.io/badge/Language-Swift%202-orange.svg)](https://developer.apple.com/swift)
+[![Language Swift 4.0](https://img.shields.io/badge/Language-Swift%204.0-orange.svg)](https://developer.apple.com/swift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg)](https://github.com/Carthage/Carthage)
 [![Accio supported](https://img.shields.io/badge/Accio-supported-0A7CF5.svg?style=flat)](https://github.com/JamitLabs/Accio)
 [![Cocoapods compatible](https://img.shields.io/cocoapods/v/SBObjectiveCWrapper.svg)]("https://cocoapods.org)
@@ -15,7 +15,7 @@ SBObjectiveCWrapper enables you to use [SwiftyBeaver](https://github.com/SwiftyB
 ## Requirements
 
 - iOS 9.0+ / Mac OS X 10.9+
-- Xcode 8
+- Xcode 9+
 
 ## Installation
 
