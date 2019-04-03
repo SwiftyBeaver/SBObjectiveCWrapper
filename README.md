@@ -7,6 +7,7 @@
 <br/>
 [![Language Swift 2.3](https://img.shields.io/badge/Language-Swift%202-orange.svg)](https://developer.apple.com/swift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg)](https://github.com/Carthage/Carthage)
+[![Accio supported](https://img.shields.io/badge/Accio-supported-0A7CF5.svg?style=flat)](https://github.com/JamitLabs/Accio)
 [![Cocoapods compatible](https://img.shields.io/cocoapods/v/SBObjectiveCWrapper.svg)]("https://cocoapods.org)
 
 SBObjectiveCWrapper enables you to use [SwiftyBeaver](https://github.com/SwiftyBeaver/SwiftyBeaver) logging in your Objective-C code.
