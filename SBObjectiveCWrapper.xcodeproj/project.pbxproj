@@ -25,11 +25,11 @@
 		38A134D71C290FFA00E1B4A9 /* SBObjectiveCWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A1349A1C28F71700E1B4A9 /* SBObjectiveCWrapper.swift */; };
 		38A134D91C291E4A00E1B4A9 /* TestLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A134D81C291E4A00E1B4A9 /* TestLogger.swift */; };
 		38A134DC1C291F2A00E1B4A9 /* SBObjectiveCMacroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A134DB1C291F2A00E1B4A9 /* SBObjectiveCMacroTests.m */; };
+		38BED56A1D90499B0067980A /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BED5691D90499B0067980A /* SwiftyBeaver.framework */; };
+		38BED56C1D9049B40067980A /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BED56B1D9049B40067980A /* SwiftyBeaver.framework */; };
+		38BED56E1D9049B80067980A /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BED56D1D9049B80067980A /* SwiftyBeaver.framework */; };
+		38BED5701D9049C40067980A /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BED56F1D9049C40067980A /* SwiftyBeaver.framework */; };
 		38BED5731D904BFF0067980A /* SBObjectiveCWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A1347B1C28F22900E1B4A9 /* SBObjectiveCWrapper.framework */; };
-		82B22DFA2254E88A004B7905 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B22DF92254E884004B7905 /* SwiftyBeaver.framework */; };
-		82B22DFB2254E88E004B7905 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B22DF82254E884004B7905 /* SwiftyBeaver.framework */; };
-		82B22DFC2254E894004B7905 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B22DF72254E884004B7905 /* SwiftyBeaver.framework */; };
-		82B22DFD2254E898004B7905 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B22DF62254E884004B7905 /* SwiftyBeaver.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,10 +72,10 @@
 		38A134D81C291E4A00E1B4A9 /* TestLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLogger.swift; sourceTree = "<group>"; };
 		38A134DA1C291F2A00E1B4A9 /* SBObjectiveCWrapperTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SBObjectiveCWrapperTests-Bridging-Header.h"; path = "Supporting Files/SBObjectiveCWrapperTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		38A134DB1C291F2A00E1B4A9 /* SBObjectiveCMacroTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBObjectiveCMacroTests.m; sourceTree = "<group>"; };
-		82B22DF62254E884004B7905 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/tvOS/SwiftyBeaver.framework; sourceTree = "<group>"; };
-		82B22DF72254E884004B7905 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/Mac/SwiftyBeaver.framework; sourceTree = "<group>"; };
-		82B22DF82254E884004B7905 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/watchOS/SwiftyBeaver.framework; sourceTree = "<group>"; };
-		82B22DF92254E884004B7905 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = "<group>"; };
+		38BED5691D90499B0067980A /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = "../../../../Library/Developer/Xcode/DerivedData/SBObjectiveCWrapper-ayduudlbdbtpwzgbklgvavovmarh/Build/Products/Debug-iphonesimulator/SwiftyBeaver.framework"; sourceTree = "<group>"; };
+		38BED56B1D9049B40067980A /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = "lib/SwiftyBeaver/build/Debug-watchos/SwiftyBeaver.framework"; sourceTree = "<group>"; };
+		38BED56D1D9049B80067980A /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = "lib/SwiftyBeaver/build/Debug-appletvos/SwiftyBeaver.framework"; sourceTree = "<group>"; };
+		38BED56F1D9049C40067980A /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = lib/SwiftyBeaver/build/Debug/SwiftyBeaver.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82B22DFA2254E88A004B7905 /* SwiftyBeaver.framework in Frameworks */,
+				38BED56A1D90499B0067980A /* SwiftyBeaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82B22DFB2254E88E004B7905 /* SwiftyBeaver.framework in Frameworks */,
+				38BED56C1D9049B40067980A /* SwiftyBeaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82B22DFD2254E898004B7905 /* SwiftyBeaver.framework in Frameworks */,
+				38BED56E1D9049B80067980A /* SwiftyBeaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82B22DFC2254E894004B7905 /* SwiftyBeaver.framework in Frameworks */,
+				38BED5701D9049C40067980A /* SwiftyBeaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,10 +233,10 @@
 		38BED5681D90499B0067980A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				82B22DF92254E884004B7905 /* SwiftyBeaver.framework */,
-				82B22DF82254E884004B7905 /* SwiftyBeaver.framework */,
-				82B22DF72254E884004B7905 /* SwiftyBeaver.framework */,
-				82B22DF62254E884004B7905 /* SwiftyBeaver.framework */,
+				38BED56F1D9049C40067980A /* SwiftyBeaver.framework */,
+				38BED56D1D9049B80067980A /* SwiftyBeaver.framework */,
+				38BED56B1D9049B40067980A /* SwiftyBeaver.framework */,
+				38BED5691D90499B0067980A /* SwiftyBeaver.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -715,7 +715,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = SBObjectiveCWrapper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -738,7 +738,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = SBObjectiveCWrapper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -785,10 +785,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/lib/SwiftyBeaver/build/Debug-watchos",
-					"$(PROJECT_DIR)/Carthage/Build/watchOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/lib/SwiftyBeaver/build/Debug-watchos";
 				INFOPLIST_FILE = SBObjectiveCWrapper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -811,10 +808,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/lib/SwiftyBeaver/build/Debug-watchos",
-					"$(PROJECT_DIR)/Carthage/Build/watchOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/lib/SwiftyBeaver/build/Debug-watchos";
 				INFOPLIST_FILE = SBObjectiveCWrapper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -837,10 +831,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/lib/SwiftyBeaver/build/Debug-appletvos",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/lib/SwiftyBeaver/build/Debug-appletvos";
 				INFOPLIST_FILE = SBObjectiveCWrapper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -863,10 +854,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/lib/SwiftyBeaver/build/Debug-appletvos",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/lib/SwiftyBeaver/build/Debug-appletvos";
 				INFOPLIST_FILE = SBObjectiveCWrapper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -890,10 +878,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/lib/SwiftyBeaver/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/lib/SwiftyBeaver/build/Debug";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = SBObjectiveCWrapper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -917,10 +902,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/lib/SwiftyBeaver/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/lib/SwiftyBeaver/build/Debug";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = SBObjectiveCWrapper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
