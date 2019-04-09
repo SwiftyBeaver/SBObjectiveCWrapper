@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "SBObjectiveCWrapper"
-    s.version      = "1.6.1"
+    s.version      = "1.5.0"
     s.summary      = "Objective-C wrapper and macros around SwiftyBeaver logging framework"
 
     s.description  = <<-DESC
