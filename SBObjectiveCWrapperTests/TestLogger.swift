@@ -35,9 +35,9 @@ class Log: NSObject {
     }
 }
 
-class TestLogger: NSObject, Loggable {
+@objc class TestLogger: NSObject, Loggable {
     
-    static var lastLog: Log?
+    @objc static var lastLog: Log?
 
     static func verbose(_ msg: @autoclosure () -> Any, _ path: String, _ function: String, line: Int, context: Any?) {
         lastLog = Log(level: .Verbose, message: String(describing: msg()), path: path, function: function, line: line)
